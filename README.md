@@ -2,6 +2,6 @@
 
 ## Simple User Management System
 Ability to add, delete and edit users based on some basic parameters using a CRUD API.
-Built from scratch using html and css styling for the frontend. 
+Built from scratch using html and css styling for the frontend.
 
-Credit @ https://www.youtube.com/watch?v=W1Kttu53qTg&t=3s
+Credit @ Daily Tuition https://www.youtube.com/channel/UCrG2Z0usOCCdUTAr4D1A8mw
