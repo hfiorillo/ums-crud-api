@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-console.log(process.env.MONGO_URI);
+if (!('MONGO_URI' in process.env)) throw new Error('MONGO_URI required in environment variables');
 
 const connectDB = async () => {
     try {
@@ -13,10 +13,10 @@ const connectDB = async () => {
         })
 
         console.log(`MongoDB connected: ${con.connection.host}`);
-    }catch(err){
+    } catch(err) {
         console.log(err);
         process.exit(1);
     }
 }
 
-module.exports = connectDB
+module.exports = connectDB;
