@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 
+if (!('MONGO_URI' in process.env)) throw new Error('MONGO_URI required in environment variables');
+
 const connectDB = async () => {
     try {
         // mongodb connection string
